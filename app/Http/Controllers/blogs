@@ -1,0 +1,117 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Device;
+
+class DeviceCRUDController extends Controller
+{
+     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $blogs = Blog::latest()->paginate(5);
+  
+        return view('vendor.deviceCRUD.index',compact('blogs'))
+            ->with('i', (request()->input('page', 1) - 1) * 5);
+    }
+   
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('vendor.deviceCRUD.create');
+    }
+  
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'model' => 'required',
+            'description' => 'required',
+            'installed' => 'required',
+            'vendor_id' => 'required',
+            'firebase_id' => 'required',
+            'status' => 'required',
+        ]);
+  
+        Blog::create($request->all());
+   
+        return redirect()->route('vendor.deviceCRUD.index')
+                        ->with('success','Blog created successfully.');
+    }
+   
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Blog  $blog
+     * @return \Illuminate\Http\Response
+     */
+    public function show(Blog $blog)
+    {
+        return view('vendor.deviceCRUD.show',compact('blog'));
+    }
+   
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Blog  $blog
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(Blog $blog)
+    {
+        return view('vendor.deviceCRUD.edit',compact('blog'));
+    }
+  
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Blog  $blog
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, Blog $blog)
+    {
+        $request->validate([
+             'name' => 'required',
+            'model' => 'required',
+            'description' => 'required',
+            'installed' => 'required',
+            'vendor_id' => 'required',
+            'firebase_id' => 'required',
+            'status' => 'required',
+        ]);
+  
+        $blog->update($request->all());
+  
+        return redirect()->route('vendor.deviceCRUD.index')
+                        ->with('success','Blog updated successfully');
+    }
+  
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Blog  $blog
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(Blog $blog)
+    {
+        $blog->delete();
+  
+        return redirect()->route('vendor.deviceCRUD.index')
+                        ->with('success','Blogs deleted successfully');
+    }
+}

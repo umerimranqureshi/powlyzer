@@ -1,0 +1,217 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@font-face {
+  font-family: "Gotham-Book";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.animaapp.com/Gotham-Book") format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://fonts.animaapp.com/Gotham-Medium") format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham-BoldItalic";
+  font-style: italic;
+  font-weight: 700;
+  src: url("https://fonts.animaapp.com/Gotham-BoldItalic") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham-BookItalic";
+  font-style: italic;
+  font-weight: 400;
+  src: url("https://fonts.animaapp.com/Gotham-BookItalic") format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://fonts.animaapp.com/Gotham-Bold") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+}
+.animate-enter {
+  animation: animate-enter-frames 0.2s ease 0s 1 normal forwards;
+  display: block;
+  opacity: 0;
+  transform: scale(0.9);
+}
+.gotham-bold-blue-zodiac-25px {
+  color: var(--blue-zodiac);
+  font-family: "Gotham-Bold", Helvetica, Arial, serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+}
+.gotham-book-normal-blue-zodiac-15px {
+  color: var(--blue-zodiac);
+  font-family: "Gotham-Book", Helvetica, Arial, serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+.gotham-medium-white-18px {
+  color: white;
+  font-family: "Gotham-Medium", Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+.ui-kit-signup-1 {
+  background-color: white;
+  height: 768px;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  width: 1366px;
+  opacity: 0;
+  transform: scale(0.9);
+}
+.ui-kit-signup-1 .black-and--es-logo123 {
+  border-radius: 82px;
+  height: 122px;
+  left: 626px;
+  position: absolute;
+  top: 20px;
+  width: 116px;
+}
+.ui-kit-signup-1 .buttonnormal {
+  align-items: flex-end;
+  background-color: var(--robins-egg-blue);
+  border-radius: 4px;
+  display: flex;
+  height: 50px;
+  justify-content: flex-end;
+  left: 526px;
+  min-width: 319px;
+  padding: 8px 73px;
+  position: absolute;
+  top: 258px;
+}
+.ui-kit-signup-1 .buttonnormal-1 {
+  align-items: flex-end;
+  background-color: var(--robins-egg-blue);
+  border-radius: 4px;
+  display: flex;
+  height: 50px;
+  justify-content: flex-end;
+  left: 528px;
+  min-width: 319px;
+  padding: 8px 71px;
+  position: absolute;
+  top: 343px;
+}
+.ui-kit-signup-1 .buttonnormal-2 {
+  align-items: flex-end;
+  background-color: var(--robins-egg-blue);
+  border-radius: 4px;
+  display: flex;
+  height: 50px;
+  justify-content: flex-end;
+  left: 525px;
+  min-width: 319px;
+  padding: 8px 76px;
+  position: absolute;
+  top: 426px;
+}
+.ui-kit-signup-1 .continue-with-admin {
+  letter-spacing: 0px;
+  line-height: 18px;
+  min-height: 26px;
+  min-width: 170px;
+  text-align: center;
+  white-space: nowrap;
+}
+.ui-kit-signup-1 .overlap-group {
+  height: 768px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+}
+.ui-kit-signup-1 .path-467 {
+  height: 384px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1366px;
+}
+.ui-kit-signup-1 .path-468 {
+  height: 551px;
+  left: 0px;
+  position: absolute;
+  top: 217px;
+  width: 1366px;
+}
+.ui-kit-signup-1 .pow-lyzer {
+  left: 613px;
+  letter-spacing: 0px;
+  line-height: 25px;
+  position: absolute;
+  text-align: left;
+  top: 138px;
+  white-space: nowrap;
+}
+.ui-kit-signup-1 .rectangle-1488 {
+  background-color: var(--white-lilac);
+  border-radius: 10px;
+  box-shadow: 0px 3px 17px rgba(44, 40, 40, 0.11);
+  height: 553px;
+  left: 445px;
+  position: absolute;
+  top: 108px;
+  width: 476px;
+}
+.ui-kit-signup-1 .text-1 {
+  left: 592px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  top: 173px;
+  white-space: nowrap;
+}
+.ui-kit-signup-1 .text-2 {
+  letter-spacing: 0px;
+  line-height: 18px;
+  min-height: 26px;
+  min-width: 174px;
+  text-align: center;
+  white-space: nowrap;
+}
+.ui-kit-signup-1 .text-3 {
+  letter-spacing: 0px;
+  line-height: 18px;
+  min-height: 26px;
+  min-width: 164px;
+  text-align: center;
+  white-space: nowrap;
+}
+.ui-kit-signup-1:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+:root {
+  --blue-zodiac: rgba(23, 43, 77, 1);
+  --robins-egg-blue: rgba(17, 205, 239, 1);
+  --white-lilac: rgba(247, 250, 252, 1);
+}
+@keyframes animate-enter-frames {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+a {
+  text-decoration: none;
+  display: contents;
+}

@@ -1,0 +1,5 @@
+firebase itegration 6/26/2021 
+ -> https://github.com/kreait/laravel-firebase#configuration
+ -> https://firebase-php.readthedocs.io/en/stable/setup.html#realtime-database-uri
+ -> https://www.cloudways.com/blog/firebase-realtime-database-laravel/
+
